@@ -14,9 +14,9 @@ This project demonstrates a complete data analytics workflow, starting from raw 
 ---
 
 ## 🛠️ Tools & Technologies
-- **Python (Pandas)** – Data cleaning and preprocessing  
-- **SQL (PostgreSQL/MySQL)** – Data querying and analysis  
-- **Power BI / Tableau** – Dashboard and visualization  
+- **SQL (MySQL)** – Data cleaning and preprocessing  
+- **SQL (MySQL)** – Data querying and analysis  
+- **Tableau** – Dashboard and visualization  
 - **Excel** – Optional initial exploration  
 
 ---
