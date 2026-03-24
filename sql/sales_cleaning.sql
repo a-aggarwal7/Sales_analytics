@@ -93,19 +93,29 @@ WHERE row_num > 1;
 SELECT * 
 FROM sales_staging2;
 
--- Handling white spaces with trim function
+-- checking for abnormalities using distinct
 SELECT DISTINCT(`Sub-Category`)
 FROM sales_staging2;
 
+-- Handling white spaces with trim function
 UPDATE sales_staging2
 SET State = TRIM(State);
 
+-- changing the date format from text to date
+SELECT `Order Date`, STR_TO_DATE(`Order Date`, '%m/%d/%Y')
+FROM sales_staging2;
 
+UPDATE sales_staging2
+SET `Order Date` = STR_TO_DATE(`Order Date`, '%m/%d/%Y');
 
+UPDATE sales_staging2
+SET `Ship Date` = STR_TO_DATE(`Ship Date`, '%m/%d/%Y');
 
+ALTER TABLE sales_staging2
+MODIFY COLUMN `Order Date` DATE;
 
-
-
+ALTER TABLE sales_staging2
+MODIFY COLUMN `Ship Date` DATE;
 
 
 
@@ -114,4 +124,17 @@ SET State = TRIM(State);
 
 -- 3. Handling null or blank values
 
+-- Checking for null values
+SELECT * 
+FROM sales_staging2
+WHERE `Postal Code` IS NULL;
+
+-- no null records found.. willmove on to next step
+
+
+
 -- 4. Remove any columns
+
+
+
+
