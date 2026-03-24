@@ -134,7 +134,10 @@ WHERE `Postal Code` IS NULL;
 
 
 -- 4. Remove any columns
+SELECT *
+FROM sales_staging2;
 
-
+ALTER TABLE sales_staging2
+DROP COLUMN row_num;
 
 
