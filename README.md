@@ -31,13 +31,23 @@ This project demonstrates a complete data analytics workflow, starting from raw 
   - Profit margin  
 
 ---
+### Key Analysis Performed
 
-## 🗄️ SQL Analysis
-Key queries performed:
-- Revenue trends (monthly/yearly)  
-- Top-performing products and categories  
-- Customer segmentation (high-value customers)  
-- Regional sales and profit analysis  
+- **Revenue Trends**
+  - Aggregated monthly sales to identify growth patterns and seasonal trends
+
+- **Category & Product Performance**
+  - Evaluated revenue and profit across categories and sub-categories
+  - Identified high-performing and loss-making products
+
+- **Customer Analysis**
+  - Identified top customers by total spending
+  - Analyzed customer contribution to overall revenue
+
+- **Regional Performance**
+  - Compared sales and profit across different regions
+
+--- 
 
 ---
 
