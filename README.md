@@ -76,11 +76,11 @@ The dashboard includes:
 ---
 
 ## 🚀 How to Run the Project
-1. Download the dataset (e.g., Superstore Sales)  
-2. Run the Python notebook for data cleaning  
+1. Download the dataset from the data folder 
+2. Run the SQL cleaning script for data cleaning  
 3. Import cleaned data into SQL database  
 4. Execute SQL queries for analysis  
-5. Load data into Power BI/Tableau to build dashboard  
+5. Load data into Tableau to build dashboard  
 
 ---
 
